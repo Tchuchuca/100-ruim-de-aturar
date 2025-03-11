@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema GYM</title>
+    <link rel="stylesheet" href="acesso-adm.css">
+</head>
+
+<body>
+    <div class="sidebar" id="nomeAcademia">
+        <div class="logo">
+            <h2>GYM SYSTEM</h2>
+        </div>
+        <nav>
+            <a href="#alunos">Alunos</a>
+            <a href="#instrutores">Instrutores</a>
+            <a href="#exercicios">Exercícios</a>
+            <a href="#planos">Planos de Treino</a>
+            <u>
+                <li><a href="login.html" id="logoutButton">Sair</a></li>
+            </u>
+        </nav>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <h1>Sistema de Gerenciamento de Academia</h1>
+        </header>
+
+        <section class="buttons-container">
+            <!-- Botões de cadastro com eventos para redirecionar para os formulários -->
+            <button class="btn" onclick="abrirCadastroInstrutor()">Cadastrar Instrutor</button>
+            <button class="btn" onclick="abrirCadastroPlanoTreino()">Cadastrar Plano de Treino</button>
+            <button class="btn" onclick="abrirCadastroExercicio()">Cadastrar Exercício</button>
+            <button class="btn" onclick="abrirCadastroAluno()">Cadastrar Aluno</button>
+        </section>
+
+        <section id="alunos" class="list-container">
+            <h2>Lista de Alunos</h2>
+            <table id="tabelaAlunos">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Idade</th>
+                        <th>Altura</th>
+                        <th>Peso</th>
+                        <th>IMC</th>
+                        <th>Objetivo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Alunos serão listados aqui -->
+                </tbody>
+            </table>
+        </section>
+
+        <section id="instrutores" class="list-container">
+            <h2>Lista de Instrutores</h2>
+            <table id="tabelaInstrutores">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Idade</th>
+                        <th>Formação</th>
+                        <th>Email</th>
+                        <th>Contato</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Instrutores serão listados aqui -->
+                </tbody>
+            </table>
+        </section>
+
+        <section id="planosTreino" class="list-container">
+            <h2>Lista de Planos de Treino</h2>
+            <table id="tabelaPlanosTreino">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Descrição</th>
+                        <th>Duração (semanas)</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Planos de treino serão listados aqui -->
+                </tbody>
+            </table>
+        </section>
+
+        <section id="exercicios" class="list-container">
+            <h2>Lista de Exercícios</h2>
+            <table id="tabelaExercicios">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Grupo Muscular</th>
+                        <th>Repetições</th>
+                        <th>Carga (kg)</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Exercícios serão listados aqui -->
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+    <script src="./JS/acesso-adm.js"></script>
+
+    <script>
+        // Função para abrir a página de cadastro de aluno
+        function abrirCadastroAluno() {
+            window.location.href = 'novos-alunos.html';  // Abre a página de cadastro de aluno
+        }
+
+        // Função para abrir a página de cadastro de instrutor
+        function abrirCadastroInstrutor() {
+            window.location.href = 'novos-instrutores.html';  // Abre a página de cadastro de instrutor
+        }
+
+        // Função para abrir a página de cadastro de exercício
+        function abrirCadastroExercicio() {
+            window.location.href = 'novos-exercicios.html';  // Abre a página de cadastro de exercício
+        }
+
+        // Função para abrir a página de cadastro de plano de treino
+        function abrirCadastroPlanoTreino() {
+            window.location.href = 'novos-planosTreinos.html';  // Abre a página de cadastro de plano de treino
+        }
+    </script>
+</body>
+
+</html>

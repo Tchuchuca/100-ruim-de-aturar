@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<link rel="stylesheet" href="login.css" media="screen" />
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label for="username">Usuário (Login)</label>
+            <input type="text" id="username" name="username" placeholder="Digite seu login" required>
+
+            <label for="password">Senha</label>
+            <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
+
+            <button type="submit">Entrar</button></form>
+        <div class="link">
+            <p>Cadastre sua Academia aqui! <a href="cadastro-academias.html">Cadastre-se</a></p>
+            <p>É Aluno? cadastre-se aqui! <a href="cadastro-alunos.html">Cadastre-se</a></p>
+        </div>
+        <div class="mensagem" id="mensagem"></div>
+        <script src="./JS/login.js"></script>
+</body>
+</html>

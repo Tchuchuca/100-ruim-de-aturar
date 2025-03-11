@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7f6;
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #1e1e2f;
+    color: white;
+    padding-top: 20px;
+    position: fixed;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar .logo {
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.sidebar h2 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar nav a {
+    padding: 15px 0px 15px 16px;
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid #444;
+    transition: background 0.3s;
+}
+
+.sidebar nav a:hover {
+    background-color: #444;
+}
+
+.main-content {
+    margin-top: 10px;
+    margin-left: 250px;
+    padding: 20px;
+    width: 100%;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 35px;
+    font-weight: 700;
+    color: #333;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.buttons-container .btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buttons-container .btn:hover {
+    background-color: #218838;
+}
+
+.list-container {
+    margin: 30px 15px 0px 15px;
+}
+
+.list-container h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table thead {
+    background-color: #f0f0f0;
+}
+
+table th,
+table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+table tr:nth-child(even) {
+    background-color: #fafafa;
+}
+
+table th {
+    background-color: #f5f5f5;
+    color: #555;
+    font-weight: 600;
+}
+
+table td {
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 200px;
+    }
+
+    .main-content {
+        margin-left: 200px;
+    }
+
+    .buttons-container {
+        flex-direction: column;
+    }
+
+    .buttons-container .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Academias</title>
+</head>
+<link rel="stylesheet" href="cadasAcademias.css" media="screen" />
+<body>
+    <div class="cadastro-container">
+        <h2>Cadastro de Academia</h2>
+        <form id="cadastroAcademiaForm">
+            <label>Nome da Academia</label>
+            <input type="text" id="nomeAcademia" placeholder="Digite o nome da academia" required>
+
+            <label for="responsavel">Responsável</label>
+            <input type="text" id="responsavel" placeholder="Digite o nome do responsável" required>
+
+            <label for="cnpj">CNPJ</label>
+            <input type="text" id="cnpj" placeholder="Digite o CNPJ" required>
+
+            <label for="endereco">Endereço</label>
+            <input type="text" id="endereco" placeholder="Digite o endereço" required>
+
+            <label for="login">Login</label>
+            <input type="text" id="login" placeholder="Digite o login" required>
+
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" placeholder="Digite a senha" required>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+        <div class="mensagem" id="mensagem"></div>
+
+        <script src="./JS/cadastroAcademias.js"></script>
+    </div>
+</body>
+</html>
