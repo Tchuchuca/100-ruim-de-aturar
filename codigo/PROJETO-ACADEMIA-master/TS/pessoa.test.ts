@@ -1,10 +1,9 @@
 import { Pessoa } from './pessoa'; 
-
 describe('Classe Pessoa', () => {
   let pessoa1: Pessoa;
 
   beforeEach(() => {
-    // Inicializando a instância antes de cada teste
+    // Inicializando a instância antes de cada teste==
     pessoa1 = new Pessoa('João', 30, 'Masculino');
   });
 

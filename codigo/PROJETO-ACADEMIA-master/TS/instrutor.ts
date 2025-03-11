@@ -31,7 +31,7 @@ class Instrutor extends Pessoa {
 
   // Método para exibir todas as informações (da Pessoa e do Instrutor)
   exibirInformacoesInstrutor(): void {
-      this.exibirInformacoes(); // Chama o método da classe base (Pessoa)
+      this.exibirInformacoesInstrutor(); // Chama o método da classe base (Pessoa)
       console.log(`Formação: ${this.formacao}`);
   }
 }
